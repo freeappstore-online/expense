@@ -1,0 +1,24 @@
+{
+  "name": "freeexpenseapp",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "scripts": {
+    "dev": "pnpm --filter @expense/web dev",
+    "build": "pnpm --filter @expense/web build",
+    "preview": "pnpm --filter @expense/web preview",
+    "typecheck": "pnpm --filter @expense/web exec tsc -b",
+    "test": "pnpm --filter @expense/web test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeappstore-online/expense.git"
+  }
+}
